@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <title>Book Page</title>
+        <link rel="stylesheet" href="{% static 'css/bookpage.css' %}">
+        <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Book Page</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

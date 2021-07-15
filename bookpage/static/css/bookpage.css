@@ -1,0 +1,62 @@
+@media screen and (min-width: 481px){ 
+    /* pc画面 */
+    .text h2{
+        font-size:36px;
+    }    
+    .text p{
+        font-size:22px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+    /* スマホ画面 */
+    .text h2{
+        font-size:20px;
+    }
+    .text p{
+        font-size:16px;
+    }
+ }
+
+ .page-header{
+     background-color:cadetblue;
+     
+
+ }
+
+ .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color:aliceblue;
+    text-decoration: none;
+    padding:2vw;
+ }
+
+
+.book{
+    height: auto;
+    display:flex;
+    padding:1vw 3vw;
+    border-bottom: solid rgba(0,0,0,0.3);
+}
+
+.image{
+    align-self: flex-start;
+    padding-right:2vw;
+}
+
+.booklist{
+    margin:1vw 2vw;
+    padding:1vw;
+    border-radius: 2vw;
+    border:solid rgba(0,0,0,0.3);
+    
+}
+
+
+
+
+
+
+
+

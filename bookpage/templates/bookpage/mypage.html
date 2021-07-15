@@ -1,0 +1,19 @@
+{% comment %} {% extends 'blog/base.html' %}
+
+{% if user.is_authenticated %}
+    {% block content %}
+        {% for i in # %}
+            <div class="book">
+                <img class="thumbnail">
+                <div cass="text">    
+                    <h2 class="title"></h2>
+                    <p class="author"></p>
+                    <p class="publisher"></p>
+            </div>
+        {% endfor %}
+    {% endblock %}
+{% else %}
+<div class="not_login">
+    <h2>please login</h2>
+</div>
+{% endif %} {% endcomment %}
