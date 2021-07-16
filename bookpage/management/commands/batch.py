@@ -1,8 +1,9 @@
-from ...models import Manga
 import requests
 import time
 import datetime
 from django.core.management.base import BaseCommand
+from bookpage.models import Manga
+
 
 class Command(BaseCommand):
     def handle(self,*args,**options):
