@@ -5,7 +5,7 @@ from django.core.management.base import BaseCommand
 import sys
 import os
 sys.path.append(os.path.abspath("..."))
-from models import Manga
+from ...models import Manga
 
 
 class Command(BaseCommand):
