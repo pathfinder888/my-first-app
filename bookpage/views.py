@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from .models import Manga
-import requests
-import time
 import datetime
 # Create your views here.
 
