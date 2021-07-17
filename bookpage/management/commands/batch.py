@@ -4,7 +4,7 @@ import datetime
 from django.core.management.base import BaseCommand
 import sys
 sys.path.append("../../")
-from models import Manga
+from . import Manga
 
 
 class Command(BaseCommand):
