@@ -3,7 +3,8 @@ import time
 import datetime
 from django.core.management.base import BaseCommand
 import sys
-sys.path.append("../..")
+import os.path
+sys.path.append(os.path.abspath("Be4r-/myapp/bookpage/models"))
 from models import Manga
 
 
