@@ -11,7 +11,7 @@ from django.utils import timezone
 #     title = models.CharField(max_length=200)
 #     publisher = models.CharField(max_length=200)
 #     tag = models.CharField(blank=True,null=True,max_length=20)
-     
+
 
 #     def __str__(self):
 #         return self.title
