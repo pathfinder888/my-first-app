@@ -3,7 +3,7 @@ import time
 import datetime
 from django.core.management.base import BaseCommand
 import sys
-sys.path.append("/myapp/myvenv/bookpage/")
+sys.path.append("/myapp/myvenv/lib/bookpage")
 from bookpage.models import Manga
 
 
