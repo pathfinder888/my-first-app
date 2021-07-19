@@ -4,7 +4,7 @@ import datetime
 from django.core.management.base import BaseCommand
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../models.py'))
 from bookpage.models import Manga
 
 
