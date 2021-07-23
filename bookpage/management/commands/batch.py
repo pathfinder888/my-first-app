@@ -4,9 +4,9 @@ import datetime
 from django.core.management.base import BaseCommand
 import sys
 import os
-from ...models import Manga
+
 # sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'models.py'))
-# from bookpage.models import Manga
+from bookpage.models import Manga
 
 
 class Command(BaseCommand):
