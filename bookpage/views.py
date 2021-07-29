@@ -6,7 +6,7 @@ from django.views.generic import ListView
 
 class BookList(ListView):
     model = Manga
-    template_name = 'bookpage/booklist.html'
+    template_name = 'bookpage/book_list.html'
 
     dtnow = datetime.datetime.now()
     monthnow = dtnow.month
