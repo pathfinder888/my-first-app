@@ -1,14 +1,12 @@
 {% extends 'bookpage/base.html' %}
 
 {% block content %}
-    <div class="function">
-
-    </div>
-    {% comment %} <div class="between">
-        <p>{{mangaslist.0}}~~{{mangaslist.}}</p>
-    </div> {% endcomment %}
+    {% comment %} <form action="" method="get" class="filter">
+        <input name="query" value="{{ request.GET.query }}" type="text">
+        <button type="submit">検索する</button>
+    </form> {% endcomment %}
     <div class="booklist">
-        {% for manga in mangaslist %}
+        {% for manga in object_list %}
             <div class="book">
                 <img src="{{ manga.img }}" class="image" >
                 <div cass="text">    
