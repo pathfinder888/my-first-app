@@ -1,0 +1,21 @@
+{% extends 'bookpage/base.html' %}
+
+{% block content %}
+    {% comment %} <form action="" method="get" class="filter">
+        <input name="query" value="{{ request.GET.query }}" type="text">
+        <button type="submit">検索する</button>
+    </form> {% endcomment %}
+    <div class="booklist">
+        {% for manga in object_list %}
+            <div class="book">
+                <img src="{{ manga.img }}" class="image" >
+                <div cass="text">    
+                    <h2 class="title">{{ manga.title }}</h2>
+                    <p class="salesday">{{ manga.publish_date }}</p>
+                    <p class="author">{{ manga.author }}</p>
+                    <p class="publisher">{{ manga.publisher }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div> 
+{% endblock %}
