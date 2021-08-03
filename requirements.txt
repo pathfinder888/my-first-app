@@ -1,1 +1,4 @@
-Django~=2.2.4
+# Django~=2.2.4
+-r requirements-dev.txt
+gunicorn
+psycopg2
