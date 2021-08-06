@@ -1,10 +1,14 @@
 {% extends 'bookpage/base.html' %}
 
 {% block content %}
-    {% comment %} <form action="" method="get" class="filter">
-        <input name="query" value="{{ request.GET.query }}" type="text">
-        <button type="submit">検索する</button>
-    </form> {% endcomment %}
+    <form action="" method="post" class="filter">{% csrf_token %}
+        <label><input name="filter" value="集英社" type="checkbox">集英社</label>
+        <label><input name="filter" value="講談社" type="checkbox">講談社</label>
+        <label><input name="filter" value="KADOKAWA" type="checkbox">KADOKAWA</label>
+        <label><input name="filter" value="スクウェア・エニックス" type="checkbox">スクウェア・エニックス</label>
+        <label><input name="filter" value="" type="checkbox"></label>
+        <button type="submit">Filter</button>
+    </form>
     <div class="booklist">
         {% for manga in object_list %}
             <div class="book">

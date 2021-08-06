@@ -8,6 +8,10 @@
     <body>
         <div class="page-header">
             <h1><a href="/">Book Page</a></h1>
+            <form action="" method="get" class="filter">
+                <input name="query" value="{{ request.GET.query }}" type="text">
+                <button type="submit">検索する</button>
+            </form>
         </div>
         <div class="content container">
             <div class="row">

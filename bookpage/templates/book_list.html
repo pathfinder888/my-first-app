@@ -1,10 +1,13 @@
 {% extends 'bookpage/base.html' %}
 
 {% block content %}
-    {% comment %} <form action="" method="get" class="filter">
-        <input name="query" value="{{ request.GET.query }}" type="text">
+    <form action="" method="get" class="filter2">
+        <label><input name="filter" value="{{ request.GET.query }}" type="checkbox"></label>
+        <label><input name="filter" value="{{ request.GET.query }}" type="checkbox"></label>
+        <label><input name="filter" value="{{ request.GET.query }}" type="checkbox"></label>
+        <label><input name="filter" value="{{ request.GET.query }}" type="checkbox"></label>
         <button type="submit">検索する</button>
-    </form> {% endcomment %}
+    </form>
     <div class="booklist">
         {% for manga in object_list %}
             <div class="book">
