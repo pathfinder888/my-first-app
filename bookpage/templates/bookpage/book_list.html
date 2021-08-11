@@ -1,7 +1,7 @@
 {% extends 'bookpage/base.html' %}
 
 {% block content %}
-    <form action="" method="post" class="filter">{% csrf_token %}
+    <form action="" method="get" class="filterfuc">
         <label><input name="filter" value="集英社" type="checkbox">集英社</label>
         <label><input name="filter" value="講談社" type="checkbox">講談社</label>
         <label><input name="filter" value="KADOKAWA" type="checkbox">KADOKAWA</label>
