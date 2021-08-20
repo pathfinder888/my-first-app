@@ -1,12 +1,30 @@
 {% extends 'bookpage/base.html' %}
 
 {% block content %}
-    <form action="" method="get" class="filterfuc">
-        <label><input name="filter" value="集英社" type="checkbox">集英社</label>
-        <label><input name="filter" value="講談社" type="checkbox">講談社</label>
-        <label><input name="filter" value="KADOKAWA" type="checkbox">KADOKAWA</label>
-        <label><input name="filter" value="スクウェア・エニックス" type="checkbox">スクウェア・エニックス</label>
-        <label><input name="filter" value="" type="checkbox"></label>
+    <form action="" method="get" class="filterfnc">
+        <input id="acd-check1" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check1">Publisher</label>
+        <div class="acdmenu">
+            <label><input class="menu-pub" name="filter" value="集英社" type="checkbox">集英社</label>
+            <label><input class="menu-pub" name="filter" value="講談社" type="checkbox">講談社</label>
+            <label><input class="menu-pub" name="filter" value="KADOKAWA" type="checkbox">KADOKAWA</label>
+            <label><input class="menu-pub" name="filter" value="スクウェア・エニックス" type="checkbox">スクウェア・エニックス</label>
+            <label><input class="menu-pub" name="filter" value="" type="checkbox"></label>
+        </div>
+        <input id="acd-check2" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check2">Day</label>
+        <div class="acdmenu">
+            {% for day in days %}
+                <label><input class="menu-day" name="day" value={{ day }} type="radio">{{ day }}</label>
+            {% endfor %}
+        </div>
+        <input id="acd-check3" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check3">Month</label>
+        <div class="acdmenu">
+            {% for month in months %}
+                <label><input class="menu-month" name="month" value={{ month }} type="radio">{{ month }}</label>
+            {% endfor %}
+        </div>
         <button type="submit">Filter</button>
     </form>
     <div class="booklist">
