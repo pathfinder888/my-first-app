@@ -22,7 +22,7 @@
 
 
 
- /* ----------------------------------------------------------------------------------------------------------- */
+ /* ---------------------------------------------ブック-------------------------------------------------------------- */
  
 
 .book{
@@ -44,7 +44,7 @@
     border:solid rgba(0,0,0,0.3);
     
 }
-/* ------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------ヘッダー---------------------------------------------------------------------- */
 .page-header{
     background-color:#34495e;
     display: flex;
@@ -56,6 +56,7 @@
     color:aliceblue;
     text-decoration: none;
     padding:2vw;
+    font-size: 50px;
  }
 
 
@@ -104,7 +105,33 @@
 }
 
 
-/* ----------------------------------------------------メニューを開閉させる---------------------------------------------------- */
+/* --------------------------------------アコーディオンメニュー------------------------------------------------------------------ */
+
+
+
+.filterfnc button[type = "submit"]{
+    background-color:#2ecc71;
+    border:0;
+    border: 2px solid #27ae60;
+    border-radius: 15px;
+    color: #103b22;
+}
+
+
+
+.acdmenu input[type = "checkbox"],.acdmenu input[type = "radio"]{
+    display: none;
+}
+
+.selabel{
+    margin-right: 10px;
+}
+
+.select:checked + .selabel{
+    background-color: #2ecc71;
+    border: 2px solid #27ae60;
+    border-radius: 5px;
+}
 
 .acd-check{
     display: none;
@@ -122,12 +149,15 @@
     opacity: 0;
     padding: 0 10px;
     transition: .5s;
+    color: #fff;
     visibility: hidden;
 }
 .acd-check:checked + .acd-label + .acdmenu{
-    height: 40px;
+    height: auto;
     opacity: 1;
+    outline: none;
     padding: 10px;
+    background-color: #34495e;
     visibility: visible;
 }
 
